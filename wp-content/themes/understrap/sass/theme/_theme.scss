@@ -1,0 +1,403 @@
+/*Swup*/
+.transition-fade {
+    transition: 0.4s;
+    opacity: 1;
+}
+
+html.is-animating .transition-fade {
+    opacity: 0;
+}
+/*Swup*/
+
+body{
+    padding: 0 !important;
+    margin: 0 !important;
+    color: $gray-700;
+}
+
+.py-6 {
+    padding: 4rem 0;
+
+}
+.py-7 {
+    padding: 5.5rem 0;
+}
+.py-8 {
+    padding: 6rem 0;
+}
+
+.pt-6 {
+    padding-top: 4rem;
+}
+.pt-7 {
+    padding-top: 5.5rem;
+}
+.pt-8 {
+    padding-top: 6rem;
+}
+
+.pb-6 {
+    padding-bottom: 4rem;
+}
+.pb-7 {
+    padding-bottom: 5.5rem;
+}
+.pb-8 {
+    padding-bottom: 6rem;
+}
+
+p{
+    margin: 0;
+}
+
+a:hover{
+    text-decoration: none !important;
+}
+
+button{
+    a{
+        color: $dark !important;
+    }
+}
+
+ul{
+    list-style: none;
+}
+
+/*===================================================================NAVBAR*/
+.logo-svg{
+    width: 40px;
+    height: 40px;
+}
+.st0{display:none;}
+.st1{display:inline;stroke:#000000;stroke-miterlimit:10;}
+.st2{fill:#FF0000;}
+.st3{fill:#0000FF;}
+.st4{fill:#00FF00;}
+
+.menu-svg{
+    width: 30px;
+    rect{
+        fill:#4285f4;
+        transition: 0.5s;
+    }
+}
+.menu-svg:hover{
+    rect{
+        &.cls-2{
+            x:0;
+            width: 40pt;
+        }
+    }
+}
+
+.navbar{
+    padding: 0;
+    background: $white !important;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    transition: top 0.5s;
+    box-shadow: $gray-300 0px 0px 10px 5px;
+}
+
+.navbar-brand{
+    margin-left: 1rem;
+}
+
+.navbar-toggler{
+    border: none !important;
+    outline: none !important;
+}
+
+nav{
+    z-index: 100;
+}
+
+.nav-item{
+    transition: 0.5s;
+
+    a{
+        color: $primary !important;
+        transition: 0.5s;
+        font-size: 20px;
+    }
+}
+
+.nav-item:hover{
+    background-color: $warning;
+
+    a{
+        color: $dark!important;
+    }
+}
+
+.dropdown-menu{
+    min-width: inherit !important;
+}
+
+.active{
+    i{
+        color: $white !important;
+    }
+    background-color: $primary;
+}
+/*===================================================================NAVBAR*/
+
+.blue-primary{
+    color: $primary;
+}
+
+.bg-hero{
+    background-image: url("../img/bg-hero.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-skills{
+    background-image: url("../img/bg-skills.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.skills-row{
+    div{
+        a{
+            transition: 0.5s;
+            color: $primary;
+
+            div{
+                transition: 0.5s;
+                border: inherit !important;
+                font-size: 50px;
+            }
+        }
+        a:hover{ 
+            div{
+                box-shadow: $gray-300 0px 0px 10px 5px;
+                border: inherit !important;
+                font-size: 50px;
+            }
+        }
+    }
+}
+
+.bg-help{
+    background-image: url("../img/bg-help.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-review{
+    background-image: url("../img/bg-review.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-inner{
+    border-radius: .5rem !important;
+    box-shadow: $gray-300 0px 0px 10px 5px;
+}
+.card-body{
+    border: inherit !important;
+    p{
+        i{
+            color: $primary !important;
+        }
+    }
+}
+
+footer{
+    font-size: 40px;
+}
+
+.bg-social{
+    background-image: url("../img/bg-social.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer-link{
+    transition: 0.5s;
+}
+.footer-link:hover{
+    color: $warning;
+}
+
+.footer-menu{
+    font-size: 1rem !important;
+
+    ul{
+        list-style: none !important;
+    }
+}
+
+.contattaci-banner{
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    background-color: $primary;
+    transition: 0.5s;
+
+    a{
+        color: $white;
+        transition: 0.5s;
+    }
+}
+.contattaci-banner:hover{
+    background-color: $warning;
+
+    a{
+        color: $dark;
+    }
+}
+
+//Biografia
+.profile-card{
+    width: 50%;
+    border: inherit !important;
+    box-shadow: $gray-300 0px 0px 10px 5px;
+
+    img{
+        padding: 30px;
+    }
+}
+
+.note{
+    color: $gray-500;
+    font-size: 12px;
+}
+
+.softwares{
+    font-size: 50px;
+}
+
+
+// Recensioni
+img{
+    &.review-card-img{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+//Web
+.description-web-project{
+    font-size: 25px;
+}
+
+//Grafica
+.test{
+    background-color: lightblue;
+    height: 700px;
+    overflow: auto;
+}
+
+.gallery-card{
+    border: inherit !important;
+    box-shadow: $gray-300 0px 0px 10px 5px;
+    border-radius: .25rem;
+}
+
+//Blog
+
+    .cmd{
+        border-radius: 0.25rem;
+        padding: 15px;
+        background-color: $dark;
+        color: $white;
+        font-family: 'Courier New', Courier, monospace;
+        font-style: normal !important;
+    }
+
+.blog-card-blog {
+    margin-top: 30px;
+}
+.blog-card {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: .25rem;
+    color: $dark;
+    background: $white;
+    box-shadow: $gray-300 0px 0px 10px 5px;
+}
+.blog-card .blog-card-image {
+    height: 50%;
+    position: relative;
+    overflow: hidden;
+    margin-top: -50px;
+    border-radius: .25rem;
+    box-shadow: $gray-300 0px 0px 10px 5px;
+}
+.blog-card .blog-card-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    pointer-events: none;
+}
+.blog-card .blog-table {
+    padding: 15px 30px;
+}
+.blog-table {
+    margin-bottom: 0px;
+}
+.blog-category {
+    position: relative;
+    line-height: 0;
+    margin: 15px 0;
+}
+.blog-text-success {
+    color: #28a745!important;
+}
+.blog-card-blog .blog-card-caption {
+    margin-top: 5px;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.blog-card .ftr div {
+    display: inline-block;
+}
+.blog-card .author .avatar {
+    width: 36px;
+    height: 36px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.blog-card .ftr .stats {
+    position: relative;
+    top: 1px;
+    font-size: 14px;
+}
+.blog-card .ftr .stats {
+    line-height: 30px;
+}
+
+.blog-text-button{
+    border: inherit !important;
+    border-radius: .25rem !important;
+    box-shadow: $gray-300 0px 0px 10px 5px;
+
+    .card-header{
+        border-bottom: inherit !important;
+    }
+}
+.img{
+    height: 190px !important;
+}
+
