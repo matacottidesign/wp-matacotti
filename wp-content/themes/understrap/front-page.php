@@ -1,11 +1,12 @@
 <?php
 /**
- * The template for displaying all pages.
+ * The main template file.
  *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site will use a
- * different template.
+ * This is the most generic template file in a WordPress theme
+ * and one of the two required files for a theme (the other being style.css).
+ * It is used to display a page when nothing more specific matches a query.
+ * E.g., it puts together the home page when no home.php file exists.
+ * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
  * @package understrap
  */
@@ -16,33 +17,36 @@ defined( 'ABSPATH' ) || exit;
 get_header();
 
 $container = get_theme_mod( 'understrap_container_type' );
-
 ?>
 
-<div class="wrapper" id="page-wrapper">
+<?php if ( is_front_page() && is_home() ) : ?>
+	<?php get_template_part( 'global-templates/hero' ); ?>
+<?php endif; ?>
 
-	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
+<div class="container pt-8">
 
-		<div class="row">
+	<?php if ( have_posts() ) : ?>
 
-			<!-- Do the left sidebar check -->
-			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
+		<?php /* Start the Loop */ ?>
 
-			<main class="site-main" id="main">
+		<?php while ( have_posts() ) : the_post(); ?>
+			<?php the_content(); ?>
+		<?php endwhile; ?>
 
-				<?php while ( have_posts() ) : the_post(); ?>
-                    <?php the_content(); ?>
-				<?php endwhile; // end of the loop. ?>
+	<?php else : ?>
 
-			</main><!-- #main -->
+		<?php get_template_part( 'loop-templates/content', 'none' ); ?>
 
-			<!-- Do the right sidebar check -->
-			<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>
+	<?php endif; ?>
 
-		</div><!-- .row -->
+	<p class="bg-warning">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita ipsa reprehenderit sunt eius debitis voluptates quod dolor. Cumque fugiat nulla molestias dolore sint cum possimus maxime blanditiis magnam, quos vitae!</p>
 
-	</div><!-- #content -->
+	<!-- The pagination component -->
+	<?php understrap_pagination(); ?>
 
-</div><!-- #page-wrapper -->
+	<!-- Do the right sidebar check -->
+	<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>
+
+</div><!-- #index-wrapper -->
 
 <?php get_footer(); ?>
