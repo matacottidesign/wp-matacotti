@@ -164,9 +164,6 @@ $container = get_theme_mod( 'understrap_container_type' );
   </footer>
 
 
-  <div style="margin-bottom: 57px;"></div>
-
-
   <div class="fixed-bottom contattaci-banner d-flex align-items-center justify-content-center rounded-circle ml-4 mb-4">
     <a href="tel:3482989187"><i class="fas fa-phone-alt"></i></a>
   </div>
