@@ -166,9 +166,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 
   <div style="margin-bottom: 57px;"></div>
 
-  <div class="container fixed-bottom contattaci-banner text-center py-3">
+
+  <div class="fixed-bottom contattaci-banner d-flex align-items-center justify-content-center rounded-circle ml-4 mb-4">
     <a href="tel:3482989187"><i class="fas fa-phone-alt"></i></a>
   </div>
+
 
 </div><!-- #page we need this extra closing tag here -->
 

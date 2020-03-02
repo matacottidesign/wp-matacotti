@@ -260,14 +260,20 @@ footer{
 }
 
 .contattaci-banner{
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
-    background-color: $primary;
+    width: 60px;
+    height: 60px;
+    background-color: $warning;
     transition: 0.5s;
+    
 
     a{
-        color: $white;
+        color: $dark;
         transition: 0.5s;
+
+        i{
+        animation: beat 1s infinite alternate;
+	    transform-origin: center;
+        }
     }
 }
 .contattaci-banner:hover{
@@ -276,6 +282,9 @@ footer{
     a{
         color: $dark;
     }
+}
+@keyframes beat{
+	to { transform: scale(2); }
 }
 
 //Biografia
