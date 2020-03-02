@@ -13,6 +13,7 @@ body{
     padding: 0 !important;
     margin: 0 !important;
     color: $gray-700;
+    background-color: $gray-100;
 }
 
 .py-6 {
@@ -150,14 +151,14 @@ nav{
 }
 
 .bg-hero{
-    background-image: url("../img/bg-hero.svg");
+    background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/bg-hero.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .bg-skills{
-    background-image: url("../img/bg-skills.svg");
+    background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/bg-skills.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -170,6 +171,7 @@ nav{
             color: $primary;
 
             div{
+                background-color: $gray-100;
                 transition: 0.5s;
                 border: inherit !important;
                 font-size: 50px;
@@ -177,7 +179,11 @@ nav{
         }
         a:hover{ 
             div{
-                box-shadow: $gray-300 0px 0px 10px 5px;
+                box-shadow: 
+                -5px -5px 20px rgba(255, 255, 255, 1),
+                5px 5px 20px rgba(55, 84, 170, 0.1),
+                inset -5px -5px 5px rgba(55, 84, 170, 0.1),
+                inset 5px 5px 5px rgba(255, 255, 255, 1);
                 border: inherit !important;
                 font-size: 50px;
             }
@@ -186,14 +192,14 @@ nav{
 }
 
 .bg-help{
-    background-image: url("../img/bg-help.svg");
+    background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/bg-help.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .bg-review{
-    background-image: url("../img/bg-review.svg");
+    background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/bg-review.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -201,10 +207,25 @@ nav{
 
 .carousel-inner{
     border-radius: .5rem !important;
-    box-shadow: $gray-300 0px 0px 10px 5px;
+    //box-shadow: $gray-300 0px 0px 10px 5px;
 }
-.card-body{
+
+.card{
+    background-color: $gray-100;
     border: inherit !important;
+    transition: 0.5s;
+}
+.card:hover{
+    box-shadow: 
+    -10px -10px 20px rgba(255, 255, 255, 1),
+    10px 10px 20px rgba(55, 84, 170, 0.1),
+    inset -5px -5px 5px rgba(55, 84, 170, 0.1),
+    inset 5px 5px 5px rgba(255, 255, 255, 1) !important;
+    
+}
+
+.card-body{
+    //border: inherit !important;
     p{
         i{
             color: $primary !important;
@@ -217,7 +238,7 @@ footer{
 }
 
 .bg-social{
-    background-image: url("../img/bg-social.svg");
+    background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/bg-social.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -15,25 +15,160 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
-<div class="wrapper" id="wrapper-footer">
+<!--Contatti-->
+<footer class="py-5 bg-social">
+    <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-4 my-5 text-center">
+	  	<span>&#128222;</span>
+        <h2 class="blue-primary mb-5">Contatti</h2>
+        <ul class="list-inline">
+          <li class="list-inline-item px-3"><a class="footer-link" href="tel:3482989187">Cellulare</a></li>
+          <li class="list-inline-item px-3"><a class="footer-link" href="mailto:francesco1984.go@gmail.com">Mail</a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center my-5 text-center">
+	  	<?php 
+		$image = get_field('immagine_footer');
+		if( !empty( $image ) ): ?>
+			<img class="w-100" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+		<?php endif; ?>
+      </div>
+      <div class="col-12 col-lg-4 my-5 text-center">
+	  	<span>&#128241;</span>
+        <h2 class="blue-primary mb-5">Social</h2>
+        <ul class="list-inline">
+          <li class="list-inline-item px-3"><a class="footer-link" href="https://www.linkedin.com/in/francesco-matacotti-37166a162/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+          <li class="list-inline-item px-3"><a class="footer-link" href="https://www.instagram.com/matacottidesign/?hl=it"><i class="fab fa-instagram" target="_blank"></i></a></li>
+          <li class="list-inline-item px-3"><a class="footer-link" href="https://www.facebook.com/profile.php?id=100008874519250" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+          <li class="list-inline-item px-3"><a class="footer-link" href="https://github.com/matacottidesign" target="_blank"><i class="fab fa-github"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    </div>
 
-	<div class="<?php echo esc_attr( $container ); ?>">
+    <div class="container text-center footer-menu">
+      <div class="row">
+        <div class="col-12 col-sm-6">
+          <h3><?php the_field('titolo_footer'); ?></h3>
+          <ul class="pl-0">
+            <li>
+				<a href="#">
+				<?php 
+				$link = get_field('menu1');
+				if( $link ): 
+					$link_url = $link['url'];
+					$link_title = $link['title'];
+					$link_target = $link['target'] ? $link['target'] : '_self';
+					?>
+					<a class="button" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+				<?php endif; ?>
+				</a>
+			</li>
+            <li>
+				<a href="#">
+				<?php 
+				$link = get_field('menu2');
+				if( $link ): 
+					$link_url = $link['url'];
+					$link_title = $link['title'];
+					$link_target = $link['target'] ? $link['target'] : '_self';
+					?>
+					<a class="button" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+				<?php endif; ?>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+				<?php 
+				$link = get_field('menu3');
+				if( $link ): 
+					$link_url = $link['url'];
+					$link_title = $link['title'];
+					$link_target = $link['target'] ? $link['target'] : '_self';
+					?>
+					<a class="button" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+				<?php endif; ?>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+				<?php 
+				$link = get_field('menu4');
+				if( $link ): 
+					$link_url = $link['url'];
+					$link_title = $link['title'];
+					$link_target = $link['target'] ? $link['target'] : '_self';
+					?>
+					<a class="button" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+				<?php endif; ?>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+				<?php 
+				$link = get_field('menu5');
+				if( $link ): 
+					$link_url = $link['url'];
+					$link_title = $link['title'];
+					$link_target = $link['target'] ? $link['target'] : '_self';
+					?>
+					<a class="button" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+				<?php endif; ?>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+				<?php 
+				$link = get_field('menu6');
+				if( $link ): 
+					$link_url = $link['url'];
+					$link_title = $link['title'];
+					$link_target = $link['target'] ? $link['target'] : '_self';
+					?>
+					<a class="button" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+				<?php endif; ?>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+				<?php 
+				$link = get_field('menu7');
+				if( $link ): 
+					$link_url = $link['url'];
+					$link_title = $link['title'];
+					$link_target = $link['target'] ? $link['target'] : '_self';
+					?>
+					<a class="button" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+				<?php endif; ?>
+				</a>
+			</li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-6">
+			<?php the_field('titolo2_footer'); ?>
+          <button type="button" class="mt-5 btn btn-warning">
+		  <?php 
+			$link = get_field('link_footer');
+			if( $link ): 
+				$link_url = $link['url'];
+				$link_title = $link['title'];
+				$link_target = $link['target'] ? $link['target'] : '_self';
+				?>
+				<a class="button" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+			<?php endif; ?>
+		  </button>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-		<div class="row">
 
-			<div class="col-md-12">
+  <div style="margin-bottom: 57px;"></div>
 
-				<footer class="site-footer" id="colophon">
-
-				</footer><!-- #colophon -->
-
-			</div><!--col end -->
-
-		</div><!-- row end -->
-
-	</div><!-- container end -->
-
-</div><!-- wrapper end -->
+  <div class="container fixed-bottom contattaci-banner text-center py-3">
+    <a href="tel:3482989187"><i class="fas fa-phone-alt"></i></a>
+  </div>
 
 </div><!-- #page we need this extra closing tag here -->
 
