@@ -169,8 +169,8 @@ $container = get_theme_mod( 'understrap_container_type' );
   </div>
 
   <div class="dark-mode fixed-bottom text-right mb-4 mr-4 d-flex justify-content-end">
-    <div class="bg-dark d-flex justify-content-center align-items-center rounded-circle">
-	<a class="rounded-circle" href="#"><i class="fas fa-moon"></i></a>
+    <div class="d-flex justify-content-center align-items-center">
+	<button class="btn bg-dark rounded-circle" onclick="dmode()"><i class="fas fa-moon"></i></button>
 	</div>
   </div>
 
@@ -179,6 +179,55 @@ $container = get_theme_mod( 'understrap_container_type' );
 </div><!-- #page we need this extra closing tag here -->
 
 <?php wp_footer(); ?>
+
+<script>
+	//Dark-mode
+function dmode() {
+  document.body.style.backgroundColor = "#343a40";
+  document.body.style.color = "#fff";
+ /*  var h1 = document.getElementsByTagName("H1");
+  var i;
+
+  for (i = 0; i < h1.length; i++) {
+    h1[i].style.color = "#fff";
+  }
+
+  var h2 = document.getElementsByTagName("H2");
+  var i;
+
+  for (i = 0; i < h2.length; i++) {
+    h2[i].style.color = "#fff";
+  }
+
+  var h3 = document.getElementsByTagName("H3");
+  var i;
+
+  for (i = 0; i < h3.length; i++) {
+    h3[i].style.color = "#fff";
+  }
+
+  var a = document.getElementsByTagName("A");
+  var i;
+
+  for (i = 0; i < a.length; i++) {
+    a[i].style.color = "#fff";
+  }
+
+  var footer = document.getElementsByTagName("FOOTER");
+  var i;
+
+  for (i = 0; i < footer.length; i++) {
+    footer[i].style.backgroundColor = "#343a40";
+  }
+
+  var test = document.getElementsByClassName("jsblack");
+  var i;
+
+  for (i = 0; i < test.length; i++) {
+    test[i].style.color = "#000";
+  }*/
+} 
+</script>
 
 </body>
 
