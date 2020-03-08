@@ -41,14 +41,14 @@ body{
     padding-bottom: 4rem;
 }
 .pb-7 {
-    padding-bottom: 5.5rem;
+    padding-bottom: 5.5rem;  
 }
 .pb-8 {
     padding-bottom: 6rem;
 }
 
 p{
-    margin: 0;
+    margin: 0; 
 }
 
 a:hover{
@@ -118,14 +118,16 @@ nav{
 
 .nav-item{
     transition: 0.5s;
+    padding: 0;
 
     a{
-        color: $primary !important;
+        color: $white !important;
         transition: 0.5s;
-        font-size: 20px;
+        font-size: 18px;
+
     }
 }
-
+ 
 .nav-item:hover{
     background-color: $warning;
 
@@ -276,7 +278,7 @@ footer{
         }
     }
 }
-.contattaci-banner:hover{
+.contattaci-banner:hover{ 
     background-color: $warning;
 
     a{
@@ -285,6 +287,21 @@ footer{
 }
 @keyframes beat{
 	to { transform: scale(2); }
+}
+
+.dark-mode{
+
+    div{
+        width: 60px;
+        height: 60px;
+
+        a{
+            font-size: 30px;
+            color: $white;
+        }
+    }
+
+    
 }
 
 //Biografia

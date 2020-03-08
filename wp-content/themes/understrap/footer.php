@@ -159,7 +159,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<?php endif; ?>
 		  </button>
         </div>
-      </div>
+      </div> 
     </div>
   </footer>
 
@@ -168,6 +168,13 @@ $container = get_theme_mod( 'understrap_container_type' );
     <a href="tel:3482989187"><i class="fas fa-phone-alt"></i></a>
   </div>
 
+  <div class="dark-mode fixed-bottom text-right mb-4 mr-4 d-flex justify-content-end">
+    <div class="bg-dark d-flex justify-content-center align-items-center rounded-circle">
+	<a class="rounded-circle" href="#"><i class="fas fa-moon"></i></a>
+	</div>
+  </div>
+
+  
 
 </div><!-- #page we need this extra closing tag here -->
 
