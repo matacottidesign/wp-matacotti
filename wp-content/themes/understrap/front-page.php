@@ -45,8 +45,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="row">
 			<div class="col-12 col-lg-6 my-5">
 				<h1 class="blue-primary mb-5 d-flex">
-					<span class="mr-3">&#128075;&#127995;</span>
 					<?php the_field('titolo_presentazione'); ?>
+					<span class="ml-3">&#128075;&#127995;</span>
 				</h1>
 				<p><?php the_field('descrizione_presentazione'); ?></p>
 				<button type="button" class="mt-5 btn btn-warning">
@@ -94,14 +94,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</div>
 
 		<div class="row skills-row">
-			<div class="col-12 col-sm-6 text-center">
+			<div class="col-12 col-lg-6 text-center">
 			<a href="#">
 				<div class="card skills-card my-5 py-4">
 					<span>&#128421;</span>
 				</div>
 			</a>
 			</div>
-			<div class="col-12 col-sm-6 text-center">
+			<div class="col-12 col-lg-6 text-center">
 			<a href="#">
 				<div class="card skills-card my-5 py-4">
 					<span>&#128396;</span>

@@ -164,15 +164,18 @@ $container = get_theme_mod( 'understrap_container_type' );
   </footer>
 
 
-  <div class="fixed-bottom contattaci-banner d-flex align-items-center justify-content-center rounded-circle ml-4 mb-4">
-    <a href="tel:3482989187"><i class="fas fa-phone-alt"></i></a>
-  </div>
-
-  <div class="dark-mode fixed-bottom text-right mb-4 mr-4 d-flex justify-content-end">
-    <div class="d-flex justify-content-center align-items-center">
-	<button class="btn bg-dark rounded-circle" onclick="dmode()"><i class="fas fa-moon"></i></button>
+	<div id="telefono" class="fixed-bottom contattaci-banner d-flex align-items-center justify-content-center rounded-circle ml-4 mb-4">
+		<a href="tel:3482989187"><i class="fas fa-phone-alt"></i></a>
 	</div>
-  </div>
+
+	<div id="darkmode" class="dark-mode fixed-bottom text-right mb-4 mr-4 d-flex justify-content-end">
+		<div class="d-flex justify-content-center align-items-center">
+			<label class="switch">
+				<input onclick="myFunction()" type="checkbox" id="switch" name="theme">
+				<span class="slider round"></span>
+			</label>
+		</div>
+	</div>
 
   
 
@@ -180,54 +183,36 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <?php wp_footer(); ?>
 
+<!-- DARK-MODE -->
 <script>
-	//Dark-mode
-function dmode() {
-  document.body.style.backgroundColor = "#343a40";
-  document.body.style.color = "#fff";
- /*  var h1 = document.getElementsByTagName("H1");
-  var i;
+var checkbox = document.querySelector('input[name=theme]');
 
-  for (i = 0; i < h1.length; i++) {
-    h1[i].style.color = "#fff";
+checkbox.addEventListener('change', function myFunction() {
+  if(this.checked){
+    document.getElementsByTagName("BODY")[0].setAttribute('class', 'democlass')
+  }else{
+    document.getElementsByTagName("BODY")[0].setAttribute('class', 'light')
   }
+})
 
-  var h2 = document.getElementsByTagName("H2");
-  var i;
+//Hide footer on Y scroll
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+	var currentScrollpos = window.pageYOffset;
 
-  for (i = 0; i < h2.length; i++) {
-    h2[i].style.color = "#fff";
-  }
+	if (prevScrollpos > currentScrollpos) {
+		document.getElementById('telefono').style.opacity = '1';
+		document.getElementById('darkmode').style.opacity = '1';
+	} else {
+		document.getElementById('telefono').style.opacity = '0';
+		document.getElementById('darkmode').style.opacity = '0';
+	}
 
-  var h3 = document.getElementsByTagName("H3");
-  var i;
-
-  for (i = 0; i < h3.length; i++) {
-    h3[i].style.color = "#fff";
-  }
-
-  var a = document.getElementsByTagName("A");
-  var i;
-
-  for (i = 0; i < a.length; i++) {
-    a[i].style.color = "#fff";
-  }
-
-  var footer = document.getElementsByTagName("FOOTER");
-  var i;
-
-  for (i = 0; i < footer.length; i++) {
-    footer[i].style.backgroundColor = "#343a40";
-  }
-
-  var test = document.getElementsByClassName("jsblack");
-  var i;
-
-  for (i = 0; i < test.length; i++) {
-    test[i].style.color = "#000";
-  }*/
-} 
+	prevScrollpos = currentScrollpos;
+};
 </script>
+
+
 
 </body>
 
