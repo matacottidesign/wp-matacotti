@@ -49,7 +49,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<span class="ml-3">&#128075;&#127995;</span>
 				</h1>
 				<p><?php the_field('descrizione_presentazione'); ?></p>
-				<button type="button" class="mt-5 btn btn-warning">
+				<button type="button" class="main-btn mt-5 btn btn-warning">
 				<?php 
 				$link = get_field('link_presentazione');
 				if( $link ): 
@@ -65,7 +65,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<?php 
 			$image = get_field('immagine_presentazione');
 			if( !empty( $image ) ): ?>
-				<img class="w-100" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+				<img class="w-100 img-anm-dx" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 			<?php endif; ?>
 			</div>
 			</div>
@@ -141,7 +141,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<?php 
 					$image = get_field('immagine_aiuto');
 					if( !empty( $image ) ): ?>
-						<img class="w-100" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+						<img class="w-100 img-anm-dx"" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 					<?php endif; ?>
 				</div>
 			</div>

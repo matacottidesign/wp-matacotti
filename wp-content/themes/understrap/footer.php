@@ -19,22 +19,20 @@ $container = get_theme_mod( 'understrap_container_type' );
 <footer class="py-5 bg-social">
     <div class="container">
     <div class="row">
-      <div class="col-12 col-lg-4 my-5 text-center">
-        <h2 class="blue-primary mb-5">Contatti</h2>
+      <div class="col-12 col-lg-4 my-5 text-center d-flex align-items-center justify-content-center">
         <ul class="list-inline">
           <li class="list-inline-item px-3"><a class="footer-link" href="tel:3482989187"><i class="fas fa-mobile-alt"></i></a></li>
           <li class="list-inline-item px-3"><a class="footer-link" href="mailto:francesco1984.go@gmail.com"><i class="fas fa-envelope"></i></a></li>
         </ul>
       </div>
-      <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center my-5 text-center">
+      <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center justify-content-center my-5 text-center">
 	  	<?php 
 		$image = get_field('immagine_footer');
 		if( !empty( $image ) ): ?>
 			<img class="w-100" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 		<?php endif; ?>
       </div>
-      <div class="col-12 col-lg-4 my-5 text-center">
-        <h2 class="blue-primary mb-5">Social</h2>
+      <div class="col-12 col-lg-4 my-5 text-center d-flex align-items-center">
         <ul class="list-inline">
           <li class="list-inline-item px-3"><a class="footer-link" href="https://www.linkedin.com/in/francesco-matacotti-37166a162/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
           <li class="list-inline-item px-3"><a class="footer-link" href="https://www.instagram.com/matacottidesign/?hl=it"><i class="fab fa-instagram" target="_blank"></i></a></li>

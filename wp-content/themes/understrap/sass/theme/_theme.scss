@@ -290,6 +290,31 @@ footer{
 	to { transform: scale(2); }
 }
 
+.main-btn{
+    animation: jump 0.7s infinite alternate;
+	transform-origin: center;
+}
+@keyframes jump{
+	to { 
+        transform: translate(0px, 15px); 
+    }
+}
+
+.img-anm-dx{
+    opacity: 0;
+    animation: from-right .5s .6s 1 forwards cubic-bezier(0.630, 0.200, 0.355, 1.000);
+}
+@keyframes from-right{
+	0% { 
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% { 
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
 //Biografia
 .profile-card{
     width: 50%;
