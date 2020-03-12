@@ -70,6 +70,7 @@ ul{
 .logo-svg{
     width: 40px;
     height: 40px;
+    background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/logo.svg");
 }
 .st0{display:none;}
 .st1{display:inline;stroke:#000000;stroke-miterlimit:10;}
@@ -95,13 +96,12 @@ ul{
 
 .navbar{
     padding: 0;
-    background: $white !important;
+    background: $gray-100 !important;
     position: fixed;
     top: 0;
     width: 100%;
     display: block;
     transition: top 0.5s;
-    box-shadow: $gray-300 0px 0px 10px 5px;
 }
 
 .navbar-brand{
@@ -111,6 +111,7 @@ ul{
 .navbar-toggler{
     border: none !important;
     outline: none !important;
+    background-color: #ffc107;
 }
 
 nav{
@@ -120,33 +121,32 @@ nav{
 .nav-item{
     transition: 0.5s;
     padding: 0;
+    border-radius: 0.25rem; 
+
+    a{
+        color: $dark !important; 
+        transition: 0.5s;
+        font-size: 18px;
+    }
+}
+.nav-item:hover{
+    background-color: $primary;
 
     a{
         color: $white !important;
-        transition: 0.5s;
-        font-size: 18px;
-
+    }
+}
+li{
+    &.active{
+        background-color: #ffc107;;
     }
 }
  
-.nav-item:hover{
-    background-color: $warning;
 
-    a{
-        color: $dark!important;
-    }
-}
-
-.dropdown-menu{
-    min-width: inherit !important;
-}
-
-.active{
-    i{
-        color: $white !important;
-    }
-    background-color: $primary;
-}
+/* .active{
+    background-color: #28a745;
+    color: #ffc107 !important;
+} */
 /*===================================================================NAVBAR*/
 
 .blue-primary{

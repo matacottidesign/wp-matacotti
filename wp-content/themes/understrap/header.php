@@ -49,7 +49,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 						<?php else : ?>
 
-							<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><img src="img/logo.svg" width="40px" alt="logo-matacotti-design"></a>
+							<!-- <a class="navbar-brand" rel="home" href="<?php //echo esc_url( home_url( '/' ) ); ?>" title="<?php //echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><img src="img/logo.svg" width="40px" alt="logo-matacotti-design"></a> -->
+
+							<div class="logo-svg">
+								<a href="#"></a>
+							</div>
 
 						<?php endif; ?>
 
@@ -68,7 +72,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						'theme_location'  => 'primary',
 						'container_class' => 'collapse navbar-collapse',
 						'container_id'    => 'navbarNavDropdown',
-						'menu_class'      => 'navbar-nav ml-auto',
+						'menu_class'      => 'navbar-nav ml-auto my-2',
 						'fallback_cb'     => '',
 						'menu_id'         => 'main-menu',
 						'depth'           => 2,
