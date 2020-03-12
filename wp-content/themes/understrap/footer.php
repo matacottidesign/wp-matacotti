@@ -144,8 +144,8 @@ $container = get_theme_mod( 'understrap_container_type' );
           </ul>
         </div>
         <div class="col-12 col-sm-6">
-			<?php the_field('titolo2_footer'); ?>
-          <button type="button" class="mt-5 btn btn-warning">
+			<?php the_field('descrizione_link_footer'); ?>
+          <button type="button" class="mt-3 btn btn-warning">
 		  <?php 
 			$link = get_field('link_footer');
 			if( $link ): 
