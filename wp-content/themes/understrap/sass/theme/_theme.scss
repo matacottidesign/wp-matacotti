@@ -543,3 +543,32 @@ img{
   .slider.round:before {
     border-radius: 50%;
   }
+
+  //ARTICOLI
+  //Widget
+  /* On screens that are 600px wide or less, the background color is olive */
+@media screen and (max-width: 700px) {
+    .widget-card{
+        height: 600px !important;
+    }
+  }
+
+  .entry-header{
+    padding-bottom: 25px;
+  }
+
+ article{
+     &.post{
+        padding-bottom: 100px;
+     }
+ }
+
+  .comment-list{
+    li{
+        article{
+            footer{
+                font-size: inherit;
+            }
+        }
+    }
+  }

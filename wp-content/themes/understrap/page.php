@@ -30,11 +30,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<main class="site-main" id="main">
 
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor facilis nisi optio laborum praesentium! Quidem placeat quo cupiditate ipsa odio deserunt, obcaecati ea, amet, voluptatem neque reiciendis accusamus nemo sit.</p>
-
 				<?php while ( have_posts() ) : the_post(); ?>
-
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor facilis nisi optio laborum praesentium! Quidem placeat quo cupiditate ipsa odio deserunt, obcaecati ea, amet, voluptatem neque reiciendis accusamus nemo sit.</p>
 
 					<?php get_template_part( 'loop-templates/content', 'page' ); ?>
 

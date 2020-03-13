@@ -9,7 +9,7 @@
 defined( 'ABSPATH' ) || exit;
 ?>
 
-<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+<article class="pb-5" <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 	<header class="entry-header">
 
@@ -34,7 +34,7 @@ defined( 'ABSPATH' ) || exit;
 
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
+	<footer class="entry-footer mt-5">
 
 		<?php edit_post_link( __( 'Edit', 'understrap' ), '<span class="edit-link">', '</span>' ); ?>
 

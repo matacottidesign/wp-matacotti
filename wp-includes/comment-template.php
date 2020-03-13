@@ -2233,9 +2233,9 @@ function wp_list_comments( $args = array(), $comments = null ) {
  *     @type string $title_reply_to       The translatable 'reply-to' button label. Default 'Leave a Reply to %s',
  *                                        where %s is the author of the comment being replied to.
  *     @type string $title_reply_before   HTML displayed before the comment form title.
- *                                        Default: '<h3 id="reply-title" class="comment-reply-title">'.
+ *                                        Default: '<h6 id="reply-title" class="comment-reply-title">'.
  *     @type string $title_reply_after    HTML displayed after the comment form title.
- *                                        Default: '</h3>'.
+ *                                        Default: '</h6>'.
  *     @type string $cancel_reply_before  HTML displayed before the cancel reply link.
  *     @type string $cancel_reply_after   HTML displayed after the cancel reply link.
  *     @type string $cancel_reply_link    The translatable 'cancel reply' button label. Default 'Cancel reply'.

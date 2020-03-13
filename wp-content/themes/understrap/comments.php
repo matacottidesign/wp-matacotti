@@ -27,7 +27,7 @@ if ( post_password_required() ) {
 
 	<?php if ( have_comments() ) : ?>
 
-		<h2 class="comments-title">
+		<h6 class="comments-title">
 
 			<?php
 			$comments_number = get_comments_number();
@@ -53,7 +53,7 @@ if ( post_password_required() ) {
 			}
 			?>
 
-		</h2><!-- .comments-title -->
+		</h6><!-- .comments-title -->
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through. ?>
 
@@ -77,7 +77,7 @@ if ( post_password_required() ) {
 
 		<?php endif; // check for comment navigation. ?>
 
-		<ol class="comment-list">
+		<ol class="comment-list card py-3 pr-1 my-3">
 
 			<?php
 			wp_list_comments(
