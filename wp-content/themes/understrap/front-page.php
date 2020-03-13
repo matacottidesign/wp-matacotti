@@ -65,7 +65,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<?php 
 			$image = get_field('immagine_presentazione');
 			if( !empty( $image ) ): ?>
-				<img class="w-100 fade-in" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+				<img data-aos-duration="2000" data-aos="fade-right" class="w-100" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 			<?php endif; ?>
 			</div>
 			</div>
