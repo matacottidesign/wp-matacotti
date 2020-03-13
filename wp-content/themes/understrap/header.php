@@ -26,6 +26,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 </head>
 
 <body <?php body_class(); ?>>
+
 <?php do_action( 'wp_body_open' ); ?>
 <div class="site" id="page">
 
@@ -87,4 +88,4 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	</div><!-- #wrapper-navbar end -->
 
-	<section style="margin-top: 62px;"></section>
+	<section style="margin-top: 59px;"></section>

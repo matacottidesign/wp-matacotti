@@ -29,7 +29,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	  	<?php 
 		$image = get_field('immagine_footer');
 		if( !empty( $image ) ): ?>
-			<img class="w-100" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+			<img class="w-100 fade-in" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 		<?php endif; ?>
       </div>
       <div class="col-12 col-lg-4 my-5 text-center d-flex align-items-center">
@@ -178,36 +178,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 </div><!-- #page we need this extra closing tag here -->
 
 <?php wp_footer(); ?>
-
-<!-- DARK-MODE -->
-<script>
-var checkbox = document.querySelector('input[name=theme]');
-
-checkbox.addEventListener('change', function myFunction() {
-  if(this.checked){
-    document.getElementsByTagName("BODY")[0].setAttribute('class', 'democlass')
-  }else{
-    document.getElementsByTagName("BODY")[0].setAttribute('class', 'light')
-  }
-})
-
-//Hide footer on Y scroll
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
-	var currentScrollpos = window.pageYOffset;
-
-	if (prevScrollpos > currentScrollpos) {
-		document.getElementById('telefono').style.opacity = '1';
-		document.getElementById('darkmode').style.opacity = '1';
-	} else {
-		document.getElementById('telefono').style.opacity = '0';
-		document.getElementById('darkmode').style.opacity = '0';
-	}
-
-	prevScrollpos = currentScrollpos;
-};
-</script>
-
 
 
 </body>
