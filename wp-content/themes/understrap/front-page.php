@@ -249,10 +249,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
 
-	<!-- The pagination component -->
-	<?php understrap_pagination(); ?>
+	
 
-	<!-- Do the right sidebar check -->
-	<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>
+	
 
 <?php get_footer(); ?>

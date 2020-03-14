@@ -276,7 +276,7 @@ class Walker_Comment extends Walker {
 		<?php if ( 'div' != $args['style'] ) : ?>
 		<div id="div-comment-<?php comment_ID(); ?>" class="comment-body">
 		<?php endif; ?>
-		<div class="comment-author vcard">
+		<div class="comment-author">
 			<?php
 			if ( 0 != $args['avatar_size'] ) {
 				echo get_avatar( $comment, $args['avatar_size'] );}
@@ -409,7 +409,7 @@ class Walker_Comment extends Walker {
 							'add_below' => 'div-comment',
 							'depth'     => $depth,
 							'max_depth' => $args['max_depth'],
-							'before'    => '<div class="reply">',
+							'before'    => '<div class="reply mb-5">',
 							'after'     => '</div>',
 						)
 					)
