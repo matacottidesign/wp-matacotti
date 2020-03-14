@@ -94,6 +94,10 @@ ul{
     }
 }
 
+nav{
+    z-index: 100;
+}
+
 .navbar{
     padding: 0;
     background: $gray-100 !important;
@@ -101,7 +105,7 @@ ul{
     top: 0;
     width: 100%;
     display: block;
-    transition: top 0.5s;
+    transition: 0.5s;
 }
 
 .navbar-brand{
@@ -112,10 +116,6 @@ ul{
     border: none !important;
     outline: none !important;
     background-color: #ffc107;
-}
-
-nav{
-    z-index: 100;
 }
 
 .nav-item{
@@ -484,7 +484,9 @@ img{
   }
 
   .darkcard{
-      background-color: $dark;
+    background-color: $dark !important;
+    border: inherit !important;
+    transition: 0.5s;
   }
   
   .switch {
@@ -579,4 +581,11 @@ img{
 
   .comment-awaiting-moderation{
       color: $gray-400;
+  }
+
+  #single-wrapper{
+    background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/bg-hero.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
