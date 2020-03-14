@@ -10,9 +10,13 @@ var checkbox = document.querySelector('input[name=theme]');
 
 checkbox.addEventListener('change', function myFunction() {
   if(this.checked){
-    document.getElementsByTagName("BODY")[0].setAttribute('class', 'democlass')
+	document.getElementsByTagName("BODY")[0].setAttribute('class', 'democlass')
+	document.getElementsByClassName("card")[0].style.backgroundColor="#343a40";
+	document.getElementsByClassName("widget-card")[0].style.backgroundColor="#343a40";
   }else{
-    document.getElementsByTagName("BODY")[0].setAttribute('class', 'light')
+	document.getElementsByTagName("BODY")[0].setAttribute('class', 'light')
+	document.getElementsByClassName("card")[0].style.backgroundColor="#f8f9fa";
+	document.getElementsByClassName("widget-card")[0].style.backgroundColor="#f8f9fa";
   }
 })
 
