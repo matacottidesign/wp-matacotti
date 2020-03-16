@@ -560,6 +560,15 @@ img{
     padding-bottom: 25px;
   }
 
+  .alert{
+    background-color: $primary;
+    color: $white;
+}
+
+  .entry-content{
+      line-height: 2;
+  }
+
  article{
      &.post{
         padding-bottom: 100px;
