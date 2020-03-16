@@ -368,18 +368,15 @@ img{
 
 //Blog
 
-    .cmd{
-        border-radius: 0.25rem;
-        padding: 15px;
-        background-color: $dark;
-        color: $white;
-        font-family: 'Courier New', Courier, monospace;
-        font-style: normal !important;
-    }
-
-.blog-card-blog {
-    margin-top: 30px;
+.cmd{
+    border-radius: 0.25rem;
+    padding: 15px;
+    background-color: $dark;
+    color: $white;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal !important;
 }
+
 .blog-card {
     display: inline-block;
     position: relative;
