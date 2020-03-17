@@ -52,7 +52,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 							<!-- <a class="navbar-brand" rel="home" href="<?php //echo esc_url( home_url( '/' ) ); ?>" title="<?php //echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><img src="img/logo.svg" width="40px" alt="logo-matacotti-design"></a> -->
 
-							<a href="#">
+							<a href="https://matacottidesign.it/">
 							<div class="logo-svg"></div>
 							</a>
 
