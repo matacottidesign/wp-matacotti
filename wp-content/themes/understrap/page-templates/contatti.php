@@ -43,56 +43,11 @@ while ( have_posts() ) :
         </div>
     </div>
 
+    <!-- Contact Form -->
+    <div class="container">
+        <?php the_content(); ?>
+    </div>
 
-  <!-- Cards -->
-  <div class="bg-skills">
-        <div class="container">
-            <div class="row">
-
-            <?php if( have_rows('card_web') ): ?>
-
-                <?php while( have_rows('card_web') ): the_row(); 
-
-                    // vars
-                    $description = get_sub_field('descrizione_card_web');
-
-                    ?>
-                        <div class="col-12 col-md-4">
-                            <div class="mb-5">
-                                <div class="card w-100">
-
-                                    <?php 
-                                    $image = get_sub_field('immagine_card_web');
-                                    if( !empty( $image ) ): ?>
-                                        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-                                    <?php endif; ?>
-
-                                    <div class="my-4">
-                                    <?php echo $description ?>
-                                    </div>
-
-                                    <button type="button" class="btn btn-warning">
-                                        <?php 
-                                        $link = get_sub_field('link_card_web');
-                                        if( $link ): 
-                                            $link_url = $link['url'];
-                                            $link_title = $link['title'];
-                                            $link_target = $link['target'] ? $link['target'] : '_self';
-                                            ?>
-                                            <a class="button" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
-                                        <?php endif; ?>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                <?php endwhile; ?>
-
-            <?php endif; ?>
-
-            </div>
-        </div>
-  </div>
 
     
 <?php    
