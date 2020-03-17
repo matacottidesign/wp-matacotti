@@ -356,8 +356,8 @@ img{
 //Grafica
 .test{
     background-color: lightblue;
-    height: 700px;
-    overflow: auto;
+    height: 400px;
+    overflow-x: scroll !important;
 }
 
 .gallery-card{
@@ -602,8 +602,6 @@ img{
       }
   }
 
-
-    #right-sidebar{
-        z-index: -1;
-    }
-  
+  .sticky-top{
+      z-index: 1;
+  }
