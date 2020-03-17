@@ -19,9 +19,9 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 <?php if ( 'both' === $sidebar_pos ) : ?>
 	<div class="col-md-3 widget-area" id="right-sidebar" role="complementary">
 <?php else : ?>
-	<div class="card widget-card col-md-4 widget-area">
+	<div class="col-lg-4 widget-area">
 	<!-- <div class="col-md-4 widget-area" id="right-sidebar" role="complementary"> -->
-	<div id="right-sidebar" role="complementary">
+	<div class="sticky-top" id="right-sidebar" role="complementary">
 
 	<!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptates voluptatibus, accusantium hic tempora expedita quidem modi obcaecati voluptate earum veritatis quia enim voluptas nisi soluta, non mollitia molestiae maxime. -->
 	

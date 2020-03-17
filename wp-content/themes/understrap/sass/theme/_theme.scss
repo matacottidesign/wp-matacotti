@@ -595,3 +595,15 @@ img{
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  aside{
+      ul{
+          list-style: unset;
+      }
+  }
+
+
+    #right-sidebar{
+        z-index: -1;
+    }
+  
