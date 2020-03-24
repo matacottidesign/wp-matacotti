@@ -15,6 +15,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
+</div><!--close Swup-->
+
 <!--Contatti-->
 <footer class="py-5 bg-social">
     <div class="container">
@@ -177,7 +179,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 </div><!-- #page we need this extra closing tag here -->
 
+
 <?php wp_footer(); ?>
+
 
 </body>
 

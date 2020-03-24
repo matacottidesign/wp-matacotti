@@ -1,0 +1,23 @@
+.transition {
+    transition: 0.5s;
+    opacity: 1;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+/*In*/
+html.is-animating .transition{
+    opacity: 0;
+    animation: from-left .5s 1.3s 1 forwards cubic-bezier(0.630, 0.200, 0.355, 1.000);
+}
+
+/*In*/
+html.is-leaving .transition{
+    opacity: 0;
+    /* top: 70px; */
+}
+
+/* body{
+    background-color: brown !important;
+} */

@@ -89,3 +89,5 @@ $container = get_theme_mod( 'understrap_container_type' );
 	</div><!-- #wrapper-navbar end -->
 
 	<section style="margin-top: 59px;"></section>
+
+	<div id="swup" class="transition">
